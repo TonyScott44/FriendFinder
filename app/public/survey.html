@@ -8,7 +8,8 @@
     <title>FriendFinder</title>
 
     <!-- Bring in jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>-->
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>-->
 
     <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,7 +20,10 @@
 
     <!--Chosen-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -41,7 +45,7 @@
 
 
     <h3><strong>Question 1</strong></h3>
-    <h4>Q1?</h4>
+    <h4>You are passionate about technology and the opportunities it presents.</h4>
     <select data-placeholder="" class="chosen-select" id="q1">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -52,7 +56,7 @@
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>Q2?</h4>
+    <h4>Formula 1 is far more interesting than Nascar.</h4>
     <select data-placeholder="" class="chosen-select" id="q2">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -63,7 +67,7 @@
     </select>
 
     <h3><strong>Question 3</strong></h3>
-    <h4>Q3?</h4>
+    <h4>You enjoy working in teams.</h4>
     <select data-placeholder="" class="chosen-select" id="q3">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -74,7 +78,7 @@
     </select>
 
     <h3><strong>Question 4</strong></h3>
-    <h4>Q4?</h4>
+    <h4>You understand the basic principles and methodologies behind software development.</h4>
     <select data-placeholder="" class="chosen-select" id="q4">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -85,7 +89,7 @@
     </select>
 
     <h3><strong>Question 5</strong></h3>
-    <h4>Q5?</h4>
+    <h4>You are an advanced programmer.</h4>
     <select data-placeholder="" class="chosen-select" id="q5">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -96,7 +100,7 @@
     </select>
 
     <h3><strong>Question 6</strong></h3>
-    <h4>Q6?</h4>
+    <h4>The thought of a 2 second pit stop excites you.</h4>
     <select data-placeholder="" class="chosen-select" id="q6">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -107,7 +111,7 @@
     </select>
 
     <h3><strong>Question 7</strong></h3>
-    <h4>Q7?</h4>
+    <h4>You enjoy solving complex problems?</h4>
     <select data-placeholder="" class="chosen-select" id="q7">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -118,7 +122,7 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>Q8?</h4>
+    <h4>You'd rather work alone than on a team.</h4>
     <select data-placeholder="" class="chosen-select" id="q8">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -129,7 +133,7 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>Q9?</h4>
+    <h4>Physics excites you.</h4>
     <select data-placeholder="" class="chosen-select" id="q9">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -140,7 +144,7 @@
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>Q10?</h4>
+    <h4>You are a car person.</h4>
     <select data-placeholder="" class="chosen-select" id="q10">
         <option value=""></option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -174,7 +178,7 @@
             </div>
             <div class="modal-body">
                 <h2 id="matchName"></h2>
-                <img id="matchImg" src="http://www.abc.net.au/news/image/9098382-3x2-940x627.jpg" alt="">
+                <img id="matchImg" src="https://media1.popsugar-assets.com/files/thumbor/lrWZzp1PXK4y8iqzn_cjHhuNr_4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2012/05/18/5/301/3019466/3a38b224706d7b40_Ren_and_Stimpy/i/Ren-Stimpy.jpg" alt="">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -225,6 +229,10 @@
 
             var currentURL = window.location.origin;
             $.post(currentURL + "/api/friends", userData, function(data){
+
+                $("matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
+
                 $("#resultsModal").modal("toggle");
             });
         }
@@ -237,6 +245,8 @@
     });
 
 </script>
+
+
 
 </body>
 
