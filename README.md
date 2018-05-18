@@ -1,22 +1,10 @@
 # Friend Finder
 Node &amp; Express Servers HW Assignment: Friend Finder | Georgia Tech Full Stack Web Development Professional Certification Course
 
-Create a folder called FriendFinder. Inside the folder, organize your directories so it matches the following:
+https://infinite-headland-53237.herokuapp.com/ 
+https://infinite-headland-53237.herokuapp.com/api/friends
 
-FriendFinder
-  - .gitignore
-  - app
-    - data
-      - friends.js
-    - public
-      - home.html
-      - survey.html
-    - routing
-      - apiRoutes.js
-      - htmlRoutes.js
-  - node_modules
-  - package.json
-  - server.js
+
 Instructions
 
 Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
